@@ -1,0 +1,252 @@
+
+  .taskbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 10%; /* Adjust width as needed */
+    height: 100vh;
+    background: linear-gradient(90deg, #fefefe, #d3d3d3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    box-shadow: 2px 0 8px rgba(117, 115, 115, 0.1);
+    z-index: 1000;
+  }
+  .taskbar div {
+    list-style: none;
+    margin: 5px 0 0 0;
+    padding:4px;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height:20px;
+  }
+  
+  .switch input {
+    opacity: 1;
+    width: 0;
+    height: 0;  
+}
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+  }
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+  }
+  input:checked + .slider {
+    background-color: #e57f1f;
+  }
+  input:checked + .slider:before {
+    transform: translateX(20px);
+  }
+  /* Dark Mode Styling */
+  /* logo */
+  .logo {
+    height: 35px;
+  }
+  .logo img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    background-color: transparent;
+  }
+  .logo svg{
+    margin: 2px;
+  }
+  /* General mobile responsiveness */
+@media (max-width: 768px) {
+  .taskbar {
+    display: flex;
+    flex-direction: column;
+    background-color: #222;
+    padding: 10px;
+    gap: 10px;
+    z-index: 1000;
+  }
+
+  .taskbar a, .taskbar button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+
+  .taskbar a:hover,
+  .taskbar button:hover {
+    background-color: #444;
+    transform: scale(1.02);
+  }
+
+  .taskbar a:active,
+  .taskbar button:active {
+    background-color: #555;
+    transform: scale(0.98);
+  }
+
+  /* Smooth dropdown or stacked items */
+  .taskbar .menu-item {
+    margin-bottom: 8px;
+  }
+}
+
+/* Optional shadow and animation for interaction */
+.taskbar {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+  /* home */
+  .home svg, .aboutme svg, .education svg, .skills svg,.projects svg,.contactme svg{
+    overflow: visible;
+    padding: 1px; /* add padding to prevent clipping */
+  margin: 1px;
+  }
+  .home svg path {
+    fill: black;
+    transition: 0.3s;
+    stroke: black;
+    display: inline-block;
+    transition: transform 0.3s ease;
+  }
+  .home svg:hover path {
+    fill: #e5c166;
+    stroke: #e5c166;
+    transform: scale(1.1) translateY(-2px);
+  }
+  /* aboutme */
+  .aboutme svg path {
+    fill: black;
+    transition: 0.3s;
+    stroke: black;
+    display: inline-block;
+    transition: transform 0.3s ease;
+  }
+  .aboutme svg:hover path {
+    fill: #e5c166;
+    stroke: #e5c166;
+    transform: scale(1.1) translateY(-2px);
+  }
+/* education */
+.education svg path {
+    fill: black;
+    stroke: black;
+    transition: all 0.3s ease;
+    display: inline-block;
+    transition: transform 0.3s ease;
+  }
+  .education svg:hover path {
+    fill: #e5c166;
+    stroke: #e5c166;
+    transform: scale(1.1) translateY(-2px);
+  }
+  /* projects */
+  .projects svg path {
+    fill: black;
+    stroke: black;
+    transition: all 0.3s ease;
+    display: inline-block;
+    transition: transform 0.3s ease;
+  }
+  .projects svg:hover path {
+    fill: #e5c166;
+    stroke: #e5c166;
+    transform: scale(1.1) translateY(-2px);
+  }
+  /* skills */
+  .skills svg path {
+    fill: black;
+    stroke: black;
+    transition: all 0.3s ease;
+    display: inline-block;
+    transition: transform 0.3s ease;
+  }
+  .skills svg:hover path {
+    fill: #e5c166;
+    stroke: #e5c166;
+    transform: scale(1.1) translateY(-2px);
+  }
+  .contactme svg path {
+    fill: black;
+    stroke: black;
+    transition: all 0.3s ease;
+    display: inline-block;
+    transition: transform 0.3s ease;
+  }
+  .contactme svg:hover path {
+    fill: #e5c166;
+    stroke: #e5c166;
+    transform: scale(1.1) translateY(-2px);
+  }
+  .menu-toggle {
+    position: fixed;
+    top: 2px;
+    left: 46px;
+    background-color: transparent ;
+    border: none;
+    color: white;
+    font-size: 22px;
+    padding: 1px 4px;
+    z-index: 1100;
+    cursor: pointer;
+    display: block;
+    border-radius: 4px;
+  }
+
+  /* Hide the taskbar by default on mobile */
+  .taskbar.collapsed {
+    transform: translateX(-100%);
+  }
+  /* ===== Responsive Taskbar Additions ===== */
+@media screen and (max-width: 1000px) {
+  .taskbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 60px; /* smaller width on mobile */
+    height: 100vh;
+    z-index: 1000;
+    transition: all 0.3s ease;
+  }
+
+  .taskbar .logo img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .taskbar div:not(.darkmode):not(.logo) {
+    padding: 6px;
+  }
+
+  .taskbar svg {
+    margin-top: 2vh;
+    width: 18px;
+    height: 18px;
+  }
+
+  /* Hamburger Menu Toggle Button */
+  
+}

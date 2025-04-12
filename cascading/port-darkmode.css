@@ -1,0 +1,85 @@
+body.dark-mode {
+  background: linear-gradient(90deg, #3c3b3b, #000000, #2f2e2e);
+  color: #f5f5f5;
+  }
+  body.dark-mode .taskbar {
+    border: 0.5px solid #333;
+  background: linear-gradient(-90deg, #333333, #000000);
+  }
+  
+  body.dark-mode .home svg path , body.dark-mode .aboutme svg path,body.dark-mode .education svg path,body.dark-mode .projects svg path,body.dark-mode .skills svg path,body.dark-mode .contactme svg path{
+    fill: white !important;
+    stroke: rgb(248, 245, 245) !important;
+    transition: 0.3s;
+  }
+  body.dark-mode .aboutme:hover svg path, body.dark-mode .home:hover svg path, body.dark-mode .education:hover svg path,body.dark-mode .projects:hover svg path, body.dark-mode .skills:hover svg path, body.dark-mode .contactme:hover svg path {
+    fill: #e57f1f !important;
+    stroke: #e57f1f !important;
+  }
+  body.dark-mode .heading, body.dark-mode .names, body.dark-mode .education, body.dark-mode .head{
+    color:white;
+  }
+  body.dark-mode .resume svg path ,body.dark-mode .linkedinn svg path, body.dark-mode .github svg path, body.dark-mode .contactme svg path, body.dark-mode .contactme svg rect{
+    fill: white;
+    transition: 0.3s;
+    stroke: white;
+  }
+  body.dark-mode .resume svg:hover path ,body.dark-mode .linkedinn svg:hover path, body.dark-mode .github svg:hover path, body.dark-mode .contactme svg:hover path, body.dark-mode .contactme svg:hover rect{
+    fill: #e57f1f;
+    stroke: #e57f1f;
+  }
+  body.dark-mode .aboutme2, body.dark-mode .box1, body.dark-mode .box2{
+    background: black ;
+    box-shadow: 5px 5px 15px 5px rgba(137, 136, 136, 0.3);
+    color: rgb(249, 246, 246);
+  }
+  body.dark-mode .box2:hover {
+    background: #c48142; /* blue-500 */
+  }
+  body.dark-mode .dcv, body.dark-mode .cap svg path, body.dark-mode .line {
+    background-color: #e57f1f;
+    fill: #e57f1f;
+  }
+  body.dark-mode .satellite-orbit{
+    border: 1px dashed rgba(249, 247, 247, 0.2);
+  }
+  body.dark-mode .langicon{
+    background: #121212;
+    box-shadow: 5px 5px 15px 5px rgba(137, 136, 136, 0.3);
+    color: white;
+  }
+  body.dark-mode .projects .boxes{
+    color: white;
+  }
+  body.dark-mode .langicon span,body.dark-mode .project-description{
+    color: white;
+  }
+  body.dark-mode .satellite svg path{
+    fill: white;
+  }
+  body.dark-mode .contact-card,body.dark-mode .contact-box{
+    background: #121212;
+  }
+
+  @media screen and (max-width: 1000px) {
+    body.dark-mode .taskbar {
+      background: linear-gradient(to bottom, #2b2b2b, #000);
+      width: 60px;
+      border-right: 1px solid #444;
+    }
+  
+    body.dark-mode .taskbar .logo img {
+      filter: brightness(85%);
+    }
+  
+    body.dark-mode .aboutme2,
+    body.dark-mode .box1,
+    body.dark-mode .box2 {
+      background: #1e1e1e ;
+    }
+  
+    body.dark-mode .langicon {
+      background: #1a1a1a;
+    }
+  }
+  

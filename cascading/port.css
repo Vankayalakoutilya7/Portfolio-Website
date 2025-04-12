@@ -1,0 +1,565 @@
+.martel-sans-extralight {
+    font-family: "Martel Sans", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .martel-sans-light {
+    font-family: "Martel Sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .martel-sans-regular {
+    font-family: "Martel Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .martel-sans-semibold {
+    font-family: "Martel Sans", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .martel-sans-bold {
+    font-family: "Martel Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .martel-sans-extrabold {
+    font-family: "Martel Sans", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .martel-sans-black {
+    font-family: "Martel Sans", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+body {
+    margin-left: 10%;
+      color: #2D2D2D;
+    font-family: "Martel Sans", sans-serif;
+    font-weight: 400; /* You can change this to 200, 300, etc., if needed */
+    font-style: normal;
+    overflow-x: hidden;
+    display: flex;
+  }
+.firstpage{
+    width: 100%;
+    text-align: center;
+    margin: 17vh auto;
+    justify-content: center;
+    margin-bottom: 16%;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    
+}
+.img img{
+    height: 47vh;
+    border-radius: 25vh;
+    box-shadow: 6px 6px 20px rgba(137, 136, 136, 0.5);
+}
+.names{
+    font-weight: 900;
+    font-size: larger;
+    color: #3a3a5a;
+}
+.icons{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+.icons svg:hover{
+  transform: scale(1.1) translateY(-2px);
+}
+.icons div{
+    cursor: pointer;
+    margin-right: 2vw;
+}
+.second ,.projects ,.skills, .last{
+ margin-left: 6vw;
+}
+.linkedinn svg path {
+  fill: black;
+  transition: 0.3s;
+  stroke: black;
+}
+.github svg path {
+  fill: black;
+  transition: 0.3s;
+  stroke: black;
+}
+.linkedinn svg:hover path {
+  fill: #e5c166;;
+  stroke: #e5c166;;
+}
+.github svg:hover path {
+  fill: #e5c166;;
+  stroke: #e5c166;;
+}
+.resume svg path {
+  fill: black;
+  transition: 0.3s;
+  stroke: black;
+}
+.resume svg:hover path {
+  fill: #e5c166;;
+  stroke: #e5c166;;
+}
+.contactme svg path , .contactme svg rect{
+  fill: black;
+  transition: 0.3s;
+  stroke: black;
+}
+.contactme svg:hover path ,.contactme svg:hover rect{
+  fill: #e5c166;;
+  stroke: #e5c166;;
+}
+.heading{
+    font-weight: 900;
+    font-size: 17px;
+    color: #3a3a5a;
+    margin-bottom: 10vh;
+}
+
+.box{
+    display: flex;
+    gap: 2vw;
+}
+.profile2 img{
+    height: 34vh;
+    margin-top: 4vh;
+    border-radius: 25vh;
+    box-shadow: 3px 3px 20px rgba(137, 136, 136, 0.5);
+}
+.aboutme2{
+  background: linear-gradient(90deg, #fefefe, #d3d3d3);
+  border-radius: 14px;
+    width: 50vw;
+    gap: 10px;
+    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 13%;
+    box-shadow: 8px 8px 20px rgba(137, 136, 136, 0.5);
+}
+.dcv{
+    width: 14vw;
+    padding: 2%;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    background-color: #1758c1;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: transform 0.6s ease;
+}
+@media  screen and (min-width: 1001px) {
+  .boxes{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .grid{
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .body{
+    
+    background: linear-gradient(90deg, #fefefe, #d3d3d3);
+  }
+}
+@media screen and (min-width: 801px) and (max-width: 1000px){
+  .boxes {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .body{
+    
+    background: linear-gradient(90deg, #fefefe, #d3d3d3);
+  }
+}
+@media screen and (max-width: 800px ) {
+  .boxes {
+    grid-template-columns: 1fr ;
+  }
+  .profile2 img {
+    height: 30vh;
+  }
+
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+.body{
+  
+  background: linear-gradient(90deg, #fefefe, #d3d3d3);
+}
+}
+
+.dcv:hover{
+  transform: scale(1.1) translateY(-2px);
+}
+.edu{
+  padding-top: 12vh;
+    margin-left: 6vw;
+    margin-bottom: 13%;
+    padding-bottom: 15vh;
+}
+.education{
+    font-weight: 900;
+    font-size: 17px;
+    color: #3a3a5a;
+}
+.box1 {
+  background: linear-gradient(90deg, #fefefe, #d3d3d3);
+  width: 70vw;
+    height: 15vh;
+    margin-left: 5vw;
+    margin-right: 3vw;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden; 
+    padding: 1%;
+    border-radius: 20px;
+    gap: 2vw;
+    margin-bottom: 8vh;
+    transition: transform 0.6s ease;
+    box-shadow: 6px 6px 20px rgba(137, 136, 136, 0.5);
+  }
+  .box1:hover, .box2:hover{
+    transform: scale(1.05) translateY(-1px);
+  }
+  .symbol {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 1vw;
+    height: 100%;
+    justify-content: center;
+    gap: 12px;
+  }
+  
+  .cap {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 4px;
+  }
+  .cap svg path{
+    fill: #1758c1;
+  }
+  .line {
+    width: 1px;
+    height: 44%; /* Keeps it inside box */
+    background-color: #1758c1;
+    margin-top: 1%;
+    margin-left: 6px;
+  }
+  .year{
+    font-size: 13px;
+  }
+  .name{
+    font-size: 15px;
+    font-weight: 700;
+  }
+  .branch{
+    font-size: 12px;
+  }
+  .details{
+    line-height: 4vh;
+  }
+  .cpi{
+    font-size: 10px;
+    display: flex;
+    gap: 12px;
+  }
+  .boxes{
+    display: grid;
+    gap: 12px;
+  }
+  .box2 {
+    height: 60vh;
+    width: 24vw;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 5px 5px 15px rgba(137, 136, 136, 0.3);
+    background: linear-gradient(90deg, #fefefe, #d3d3d3);
+  }
+
+  .project-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    
+    text-align: left;
+    line-height: 4vh;
+    margin: 6%;
+    height: 100%;
+  }
+  
+  /* Image is always visible */
+  .project-icon {
+    width: 40px;              /* adjust as needed */
+    height: 40px;            /* ensures image scales without cropping */
+    border-radius: 50%;  
+    object-fit: cover;      /* makes the image appear circular */
+    background: linear-gradient(90deg, #fefefe, #d3d3d3);
+    padding: 16px;             /* provides space between image and circle edge */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* optional aesthetic */
+    margin-bottom: 10px;
+    transition: opacity 0.5s ease;
+  }
+  
+  /* Title is hidden initially */
+  .project-title {
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 1vh 0 0 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease;
+    color: white;
+  }
+  .title{
+    font-size: large;
+    font-weight: 600;
+    transition: opacity 0.5s ease;
+  }
+  /* Description always visible */
+  .project-description {
+    color: black;
+    font-size: 0.9rem;
+    transition: opacity 0.5s ease;
+    margin-bottom: 0;
+  }
+ 
+  
+  /* Button is hidden initially */
+  .source-button {
+    background-color: #22c55e;
+    width: fit-content;
+    padding: 7px 12px;
+    border-radius: 40px;
+    margin-top: 5%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease;
+  }
+  
+  .source-button svg {
+    bottom: 0;
+    margin-bottom: 10px;
+  }
+  /* Reveal title and button on hover */
+  .box2:hover {
+    background: #1758c1;
+    transform: scale(1.05) translateY(-1px);  /* blue-500 */
+  }
+  
+  .box2:hover .project-title,
+  .box2:hover .source-button {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.05) translateY(-1px);
+  }
+  .box2:hover .project-description,
+  .box2:hover .project-icon,
+  .box2:hover .title{
+    opacity:0.2;
+  }
+  @media screen and (max-width: 1000px) {
+    .box2 {
+      width: 40vw;
+      height: auto;
+    }
+  }
+  
+  @media screen and (max-width: 800px) {
+    .box2 {
+      width: 80vw;
+      height: auto;
+    }
+  }
+  
+  .skills{
+    margin-top: 13%;
+    margin-bottom:13%;
+  }
+  .grid {
+    display: grid;
+    gap: 10px;
+    padding: 0 20px;
+  }
+  
+  .langicon {
+    width: 120px;
+    height: 120px;
+    padding: 25px;
+    margin-top: 12px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 15px rgba(137, 136, 136, 0.3);
+    background: linear-gradient(90deg, #fefefe, #d3d3d3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.6s ease;
+  }
+  
+  .langicon img {
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+    margin-bottom: 5px;
+  }
+  
+  .langicon span {
+    font-size: 12px;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .langicon:hover{
+    transform: scale(1.1) translateY(-1.2px);
+  }
+.box3{
+  display: flex;
+  margin-top: 0.2vh;
+}
+.head{
+    font-weight: 900;
+    font-size: 17px;
+    color: #3a3a5a;
+    margin-bottom: -3vh;
+}
+  .boxer{
+    width: 80%;
+    margin-left: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    margin-top: 12vh;
+  }
+  .contact-box{
+    padding: 4%;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(137, 136, 136, 0.5);
+    gap: 2vh;
+  }
+  .scene {
+    position: relative;
+    width: 400px;
+    height: 300px;
+  }
+
+  .tower {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .satellite-orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 150px;
+    height: 150px;
+    border: 1px dashed rgba(14, 14, 14, 0.2);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    animation: rotate 8s linear infinite;
+  }
+
+  .satellite {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    width: 30px;
+    height: 30px;
+    background: #00bfff;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 10px #00bfff;
+  }
+
+  .satellite-orbit:nth-child(3) {
+    width: 200px;
+    height: 200px;
+    animation-duration: 5s;
+  }
+
+  .satellite-orbit:nth-child(3) .satellite {
+    background: #ff4500;
+    box-shadow: 0 0 10px #ff4500;
+  }
+
+  @keyframes rotate {
+    from {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }
+  .subtitle {
+    font-size: 20px;
+    margin:0;
+  }
+  .satellite svg path{
+    fill: black;
+  }
+  .contact-card {
+    background: linear-gradient(90deg, #fefefe, #d3d3d3);
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 2px 3px 11px rgba(137, 136, 136, 0.5);
+    transition: transform 0.3s ease;
+  }
+  .contact-card:hover{
+    transform: scale(1.05) translateY(-1px);
+  }
+.le svg{
+    padding-left: 12px;
+    padding-top: 3px;
+}
+  .ri{
+    margin-left: 4vw;
+    margin-bottom: 3vh;
+  }
+  .contact-box{
+    margin-bottom: 11%;
+  }
+  .label {
+    font-weight: bold;
+    margin-top: 2px;
+    font-size: 12px;
+    margin-bottom: 0px;
+  }
+  
+  .info {
+    color: #9b9898;
+    margin: 0;
+    padding-top: 1px;
+    padding-right: 7vw;
+    font-size: 8px;
+  }
+  
